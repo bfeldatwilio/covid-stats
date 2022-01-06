@@ -4,6 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"@react-google-maps/api": "^2.2.0",
+		"@salesforce/canvas-js-sdk": "^1.41.0",
 		"netlify-lambda": "^2.0.14",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",

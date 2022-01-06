@@ -37,7 +37,7 @@ export default function Details(props) {
 			<div>
 				<h2>{props.data.Country_Region}</h2>
 				<ul>
-					<li>Deaths: {props.data.Deaths.toLocaleString()}</li>
+					<li>Total Deaths: {props.data.Deaths.toLocaleString()}</li>
 					<li>Confirmed: {props.data.Confirmed.toLocaleString()}</li>
 					<li>
 						Mortality Rate: {props.data.Mortality_Rate.toFixed(2)}

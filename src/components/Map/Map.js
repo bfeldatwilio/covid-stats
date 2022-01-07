@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import "@salesforce/canvas-js-sdk";
 import mapStyle from "../../assets/map_styles/style1";
 import { Theme } from "../../assets/Theme";
 
@@ -10,6 +11,10 @@ props:
 
 export default function Map(props) {
 	const [location, setLocation] = useState({});
+
+	const consumerSecret = process.env.CANVAS_CONSUMER_SECRET;
+
+	// global.Sfdx.canvas(() => {});
 
 	const options = {
 		styles: mapStyle,
